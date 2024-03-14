@@ -1,0 +1,384 @@
+html {
+    height: 100vh;
+}
+
+body {
+    font-family: Zilla Slab, Yaldevi, serif;
+    background-color: #DDDBCB;
+    background-image: url('../images/sky.jpg');
+    height: 100%;
+}
+
+section {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: rgba(255,255,255,0.3);
+}
+
+.displayToggle{
+    display: none; 
+}
+
+.inline-block {
+    display: inline-block;
+
+}
+h1 {
+    text-align: center;
+    margin-bottom: 0px;
+    background-color: #DDDBCB;
+} 
+
+.logo {
+    width: 5%;
+    height:5%;}
+
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    width: 80%;
+    margin: 0 auto;
+    background-color: transparent;
+    padding: 20px;
+}
+
+nav li {
+    margin: 0 auto;
+    font-size: 30px;
+    background: #DDDBCB;
+    border-radius: 5px;
+    padding: 5px 10px 0px 10px;
+    cursor: pointer;
+    
+}
+
+.preview ul {
+    list-style-type: none;
+    width: 100%;
+    margin: 0 auto;
+}
+
+h4 {
+    font-size: 24px;
+    text-align: center;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+.preview {
+    background-color:#DDDBCB;
+    height: 100%;
+}
+
+
+.picture{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+}
+
+.heroSection {
+    height: 93%;
+}
+
+p {
+    font-size:18px;
+}
+
+.selfPreview p {
+    padding: 5%;
+}
+
+.preview ul {
+    padding-bottom: 2vh;
+}
+.preview li {
+    text-align: center;
+    margin-left: -90px;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.hoverCTA {
+    display: block;
+    margin: 0 auto;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+/*Grid Structure*/
+
+.imgPreview {
+    grid-area: imgPreview;
+}
+
+.selfPreview {
+    grid-area: selfPreview;
+}
+.workPreview{
+    grid-area: workPreview;
+}
+
+.skillsPreview {
+    grid-area: skillsPreview;
+}
+
+.heroGrid {
+    display: grid;
+    height: 100%;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "imgPreview imgPreview selfPreview selfPreview selfPreview"
+        "workPreview workPreview workPreview skillsPreview skillsPreview";
+    row-gap: 10px;
+    column-gap: 10px;
+    
+}
+
+/*End Grid Structure*/
+
+.flexContainer {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+}
+
+
+.skill {
+    width: 33%;
+    height: 93%;
+    /*outline-style: dotted;
+    outline-color: red;*/
+    background-color:#DDDBCB;
+    margin: 0 auto;
+}
+
+.skill img {
+ display:block;   
+ margin: auto;
+}
+
+.skill h3 {
+    text-align: center;
+}
+
+.workGrid {
+    background-color: #DDDBCB;
+    height: 93%; 
+}
+
+
+.skill p, .workGrid p{
+    margin: 10px;
+    margin-left: 40px;
+}
+
+.workGrid img {
+    max-width: 100%;
+    max-height: 100%;
+
+}
+
+
+.workGrid h4 {
+    padding: 0 10px 10px 0;
+    font-size: 24px;
+}
+
+.workGrid p {
+    padding: 30px 30px 10px 30px;
+}
+
+/*Grid Structure*/
+.ppages {
+    grid-area: ppages;
+}
+
+.localeyes {
+    grid-area: localeyes;
+}
+
+.ppages {
+    grid-area: ppages;
+}
+
+.localeyes {
+    grid-area: localeyes;
+}
+
+.p1img {
+    grid-area: p1img;
+}
+
+.p2img {
+    grid-area: p2img;
+}
+
+.p1text {
+    grid-area: p1text;
+}
+
+.p2text {
+    grid-area: p2text;
+}
+
+.p1button {
+    grid-area: p1button;
+}
+
+.p2button {
+    grid-area: p2button;
+}
+.workGrid {
+    display: grid;
+    /*height: auto*/
+    /*outline-style: dotted;
+    outline-color: blue;*/
+    grid-template-rows: 15% 30% 45% 10%; /*repeat(4, 1fr);*/
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "ppages localeyes"
+        "p1img p2img"
+        "p1text p2text"
+        "p1button p2button";
+    align-items: center;
+    justify-items: center;
+
+}
+/*End Grid Structure*/
+
+
+
+.footer {
+    background-color: #DDDBCB;
+    margin-top: 20px;
+}
+
+.footerGrid * {
+    margin: -50px;
+}
+
+/*Start Grid Structure*/
+
+.greeting {
+    grid-area: greeting;
+    font-size: 30px;
+}
+
+.email {
+    grid-area: email;
+    font-size: 18px;
+}
+
+.profile {
+    grid-area: profile;
+    height: 70%;
+}
+
+.phone {
+    grid-area: phone;
+    font-size: 18px;
+}
+
+.copyright {
+    grid-area: copyright;
+    height: 70%;
+}
+
+.linkedin {
+    grid-area: linkedin;
+    height: 70%
+}
+
+.fb {
+    grid-area: fb;
+    height: 70%
+}
+
+.footerGrid {
+    width: 20%;
+    margin: 0 auto;
+    display: grid;
+    /*height: auto*/
+    /*outline-style: dotted;
+    outline-color: blue;*/
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+        "none profile profile"
+        "greeting profile profile"
+        "email profile profile"
+        "copyright linkedin fb";
+    align-items: center;
+    justify-items: center;
+
+}
+
+/*End Grid Structure*/
+
+button {
+    background-color: #62E7F8;
+    border: 1px solid black;
+    padding: 3px 5px 3px 5px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    font-weight: regular;
+    font-size: 18px;
+    font-family: Zilla Slab, Yaldevi, serif;
+}
+
+/*Would not work without px after adding hover interactions, it seemed*/
+@media only screen and (max-width: 600px) {
+    .heroGrid {
+        display:grid;
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "imgPreview"
+            "selfPreview"
+            "workPreview"
+            "skillsPreview"
+        ;
+        align-items: center;
+        justify-items: center;
+    }
+    
+    .flexContainer {
+        display: grid;
+        flex-direction: column;
+        justify-items: center;
+    }
+
+    .skill {
+        width: 100%;
+    }
+
+    .workGrid {
+        display: grid;
+        /*height: auto*/
+        grid-template-rows: repeat(8, 1fr);
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "ppages"
+            "p1img"
+            "p1text"
+            "p1button"
+            "localeyes"
+            "p2img"
+            "p2text"
+            "p2button";
+        align-items: center;
+        justify-items: center;   
+    }
+
+}
